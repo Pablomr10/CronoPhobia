@@ -1,0 +1,27 @@
+{
+  "Profiles": [
+    {
+      "ProfileName": "New profile",
+      "IsDefault": true,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 48,
+      "TimerFontSize": 120,
+      "TextColor": "White",
+      "WindowLeft": 138,
+      "WindowTop": 86
+    },
+    {
+      "ProfileName": "Pablo",
+      "IsDefault": false,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 82.28712871287128,
+      "TimerFontSize": 143.76237623762376,
+      "TextColor": "Red",
+      "WindowLeft": -1230,
+      "WindowTop": 743
+    }
+  ],
+  "ActiveProfileName": "prueba"
+}

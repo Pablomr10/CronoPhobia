@@ -1,0 +1,38 @@
+{
+  "Profiles": [
+    {
+      "ProfileName": "Default",
+      "IsDefault": true,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 48,
+      "TimerFontSize": 120,
+      "TextColor": "White",
+      "WindowLeft": 1130,
+      "WindowTop": 596
+    },
+    {
+      "ProfileName": "Pablo",
+      "IsDefault": false,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 48,
+      "TimerFontSize": 120,
+      "TextColor": "White",
+      "WindowLeft": 1130,
+      "WindowTop": 596
+    },
+    {
+      "ProfileName": "Pene",
+      "IsDefault": false,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 48,
+      "TimerFontSize": 120,
+      "TextColor": "White",
+      "WindowLeft": 1130,
+      "WindowTop": 596
+    }
+  ],
+  "ActiveProfileName": "Pablo"
+}

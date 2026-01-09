@@ -1,0 +1,16 @@
+{
+  "Profiles": [
+    {
+      "ProfileName": "Nuevo perfil",
+      "IsDefault": true,
+      "ShowTitle": true,
+      "ShowIcons": true,
+      "TitleFontSize": 48,
+      "TimerFontSize": 84,
+      "TextColor": "White",
+      "WindowLeft": 1158,
+      "WindowTop": 1002
+    }
+  ],
+  "ActiveProfileName": "Nuevo perfil"
+}

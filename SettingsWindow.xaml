@@ -1,0 +1,127 @@
+<Window x:Class="Cronophobia.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings - Cronophobia"
+        Width="360"
+        Height="520"
+        ResizeMode="NoResize"
+        Background="#1E1E1E"
+        Foreground="White"
+        WindowStartupLocation="Manual">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- ================= CONTENIDO PRINCIPAL ================= -->
+        <StackPanel Grid.Row="0">
+
+            <TextBlock x:Name="SettingsTitle"
+                       Text="Cronophobia"
+                       FontSize="58"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <TextBlock Text="Visual settings"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,0,0,10"/>
+
+            <CheckBox x:Name="ShowTitleCheck"
+                      Content="Show title"
+                      Foreground="White"/>
+
+            <CheckBox x:Name="ShowIconsCheck"
+                      Content="Show icons"
+                      Foreground="White"
+                      Margin="0,5,0,10"/>
+
+            <TextBlock Text="Title size"
+                       Foreground="White"/>
+            <Slider x:Name="TitleSizeSlider"
+                    Minimum="20"
+                    Maximum="140"/>
+
+            <TextBlock Text="Timer size"
+                       Foreground="White"
+                       Margin="0,10,0,0"/>
+            <Slider x:Name="TimerSizeSlider"
+                    Minimum="40"
+                    Maximum="220"/>
+
+            <TextBlock Text="Text color"
+                       Foreground="White"
+                       Margin="0,10,0,0"/>
+            <ComboBox x:Name="ColorCombo"
+                      Margin="0,0,0,10">
+                <ComboBoxItem Content="White"/>
+                <ComboBoxItem Content="Red"/>
+                <ComboBoxItem Content="Green"/>
+                <ComboBoxItem Content="Blue"/>
+            </ComboBox>
+
+        </StackPanel>
+
+        <!-- ================= PERFIL + BOTONES ================= -->
+        <StackPanel Grid.Row="1"
+                    Margin="0,20,0,0">
+
+            <TextBlock Text="Active profile"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,0,0,5"/>
+
+            <ComboBox x:Name="ProfilesCombo"
+                      Height="26"
+                      Margin="0,0,0,15"/>
+
+            <!-- BOTONES -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1"
+                        Content="Delete"
+                        Width="90"
+                        Margin="0,0,8,0"
+                        Click="Delete_Click"/>
+
+                <Button Grid.Column="2"
+                        Content="Reload"
+                        Width="90"
+                        Margin="0,0,8,0"
+                        Click="Reset_Click"/>
+
+                <Button Grid.Column="3"
+                        Content="Save"
+                        Width="90"
+                        Click="Save_Click"/>
+            </Grid>
+
+        </StackPanel>
+                <!-- ================= CERRAR APP ================= -->
+                <Grid Grid.Row="2"
+                Margin="0,35,0,0">
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1"
+                        Content="Close app"
+                        Width="120"
+                        Click="CloseApp_Click"/>
+                </Grid>
+
+
+
+    </Grid>
+</Window>
